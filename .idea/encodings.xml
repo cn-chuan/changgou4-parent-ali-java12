@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/changgou4-common-auth-java12/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-common-db-java12/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-common-java12/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-gateway-java12/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-pojo-java12/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-service-auth-java12/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-service-cart-java12/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-service-cart/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-service-orders-java12/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-service-search-java12/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-service-web-java12/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-test-parent/changgou4-test-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-test-parent/changgou4-test-elasticsearch-java12/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-test-parent/changgou4-test-wxpay/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-test-parent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-test-parent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/changgou4-test-parent/test-RegerenceType/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

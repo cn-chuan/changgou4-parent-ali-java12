@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="changgou4-service-orders-java12" />
+        <module name="changgou4-common-db-java12" />
+        <module name="changgou4-common-auth-java12" />
+        <module name="changgou4-test-base" />
+        <module name="changgou4-pojo-java12" />
+        <module name="changgou4-test-wxpay" />
+        <module name="changgou4-service-cart-java12" />
+        <module name="changgou4-gateway-java12" />
+        <module name="changgou4-common-java12" />
+        <module name="changgou4-test-elasticsearch-java12" />
+        <module name="changgou4-service-search-java12" />
+        <module name="changgou4-service-auth-java12" />
+        <module name="changgou4-service-web-java12" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="changgou4-service-cart" target="1.8" />
+      <module name="test-RegerenceType" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="changgou4-common-auth-java12" options="-parameters" />
+      <module name="changgou4-common-db-java12" options="-parameters" />
+      <module name="changgou4-common-java12" options="-parameters" />
+      <module name="changgou4-gateway-java12" options="-parameters" />
+      <module name="changgou4-pojo-java12" options="-parameters" />
+      <module name="changgou4-service-auth-java12" options="-parameters" />
+      <module name="changgou4-service-cart" options="-parameters" />
+      <module name="changgou4-service-cart-java12" options="-parameters" />
+      <module name="changgou4-service-orders-java12" options="-parameters" />
+      <module name="changgou4-service-search-java12" options="-parameters" />
+      <module name="changgou4-service-web-java12" options="-parameters" />
+      <module name="changgou4-test-base" options="-parameters" />
+      <module name="changgou4-test-elasticsearch-java12" options="-parameters" />
+      <module name="changgou4-test-parent" options="" />
+      <module name="changgou4-test-wxpay" options="-parameters" />
+      <module name="test-RegerenceType" options="-parameters" />
+    </option>
+  </component>
+</project>
