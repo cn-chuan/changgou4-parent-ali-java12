@@ -12,6 +12,7 @@ public class Delivery {
     private Integer id;
     private String name;
     private double price;
+    @TableField("priceNorm")
     private String priceNorm;
     private boolean isdefault;
     @TableField(exist = false)

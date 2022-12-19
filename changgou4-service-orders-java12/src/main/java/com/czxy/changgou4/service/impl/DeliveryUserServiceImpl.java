@@ -8,4 +8,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class DeliveryUserServiceImpl extends ServiceImpl<DeliveryUserMapper,DeliveryUser> implements DeliveryUserService {
+
 }

@@ -7,4 +7,6 @@ import java.util.ArrayList;
 
 public interface DeliveryService extends IService<Delivery> {
     ArrayList<Delivery> findAll(Long id);
+
+    void updateDelivery(Long id, Integer tid, Integer did);
 }
