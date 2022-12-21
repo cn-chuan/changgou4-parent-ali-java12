@@ -41,7 +41,7 @@ public class DeliveryController {
         ArrayList<Delivery> list= deliveryService.findAll(loginUser.getId());
         return BaseResult.ok("查询成功",list);
     }
-    @PostMapping("/{tid}/{did}")
+    @PostMapping("/{did}/{tid}")
     public BaseResult updateDelivery(@PathVariable("tid")Integer tid,@PathVariable("did")Integer did){
         //1 获得登录用户
         String token = request.getHeader("Authorization");

@@ -31,19 +31,29 @@ public class DeliveryServiceImpl extends ServiceImpl<DeliveryMapper, Delivery> i
     }
     public void saveDelivery(ArrayList<Delivery> all,Long id){
         for (Delivery delivery : all) {
-            ArrayList<DeliveryTime> list = delivery.getList();
-            for (DeliveryTime deliveryTime : list) {
-                if (deliveryTime.isIsdefault()){
-                    DeliveryUser findDeliverUser = deliveryUserService.getById(id);
-                    if (findDeliverUser!=null)deliveryUserService.removeById(id);
-                    DeliveryUser deliveryUser = new DeliveryUser(id,delivery.getId(),deliveryTime.getId());
-                    deliveryUserService.save(deliveryUser);
+            if(delivery.isIsdefault()){
+                DeliveryUser findDeliverUser = deliveryUserService.getById(id);
+                if (findDeliverUser!=null)deliveryUserService.removeById(id);
+                DeliveryUser deliveryUser = new DeliveryUser(id,delivery.getId(),1);
+                deliveryUserService.save(deliveryUser);
+            }
+            if(delivery.getList().size()!=0){
+                ArrayList<DeliveryTime> list = delivery.getList();
+                for (DeliveryTime deliveryTime : list) {
+                    if (deliveryTime.isIsdefault()){
+                        DeliveryUser findDeliverUser = deliveryUserService.getById(id);
+                        if (findDeliverUser!=null)deliveryUserService.removeById(id);
+                        DeliveryUser deliveryUser = new DeliveryUser(id,delivery.getId(),deliveryTime.getId());
+                        deliveryUserService.save(deliveryUser);
+                        break;
+                    }
                 }
             }
+
         }
     }
     @Override
-    public void updateDelivery(Long id, Integer tid, Integer did) {
+    public void updateDelivery(Long id, Integer did, Integer tid) {
         ArrayList<Delivery> all = deliveryService.findAll(id);
         for (Delivery delivery : all) {
             if(delivery.isIsdefault()){
@@ -65,8 +75,7 @@ public class DeliveryServiceImpl extends ServiceImpl<DeliveryMapper, Delivery> i
             }
             deliveryService.updateById(delivery);
         }
-        ArrayList<Delivery> list = findAll(id);
-        saveDelivery(list,id);
+        saveDelivery(all,id);
 
 
     }
