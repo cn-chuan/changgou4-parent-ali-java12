@@ -177,9 +177,9 @@ public class SkuServiceImpl extends ServiceImpl<SkuMapper, Sku> implements SkuSe
         // 修改数据
         sku.setStock( sku.getStock() - count );
         System.out.println("skuId:"+skuId);
-        if(skuId==2600248){
-            throw new RuntimeException("库存不足");
-        }
+//        if(skuId==2600248){
+//            throw new RuntimeException("库存不足");
+//        }
         // 更新
         baseMapper.updateById(sku);
     }

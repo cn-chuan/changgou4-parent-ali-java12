@@ -57,9 +57,11 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         // 1.2 所属用户
         order.setUserId(loginUser.getId());
         // 1.3 联系人相关
+        System.out.println(orderVo);
         Address address = addressMapper.selectById(orderVo.getAddressId());
 //        order.setShrName(address.getShrName());
 //        order.setShrMobile(address.getShrMobile());
+        //address为null
         BeanUtils.copyProperties(address, order);
         // 1.4 订单状态及其时间
         order.setStatus(CGConstant.ORDER_STATUS_NO_PAY);
@@ -70,7 +72,8 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         Cart cart = JSON.parseObject(cartJsonStr, Cart.class);
         // 1.6 总价
         order.setTotalPrice(cart.getTotal());
-
+//        添加支付方式
+        order.setPayMethod(orderVo.getPayMethod());
         // 2 下订单
         baseMapper.insert(order);
 

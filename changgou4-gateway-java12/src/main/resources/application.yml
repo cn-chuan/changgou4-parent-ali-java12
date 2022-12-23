@@ -44,3 +44,4 @@ sc:
       - swagger
       - /api-docs
       - /delivery
+      - /payMethod

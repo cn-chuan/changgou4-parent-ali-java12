@@ -28,6 +28,7 @@ public class AddressServiceImpl extends ServiceImpl<AddressMapper, Address> impl
         baseMapper.updateDefault(0 , address.getUserId());
         // 2 添加
         address.setIsdefault(1);
+        address.setShrName(address.getShrName());
         baseMapper.insert(address);
     }
 }

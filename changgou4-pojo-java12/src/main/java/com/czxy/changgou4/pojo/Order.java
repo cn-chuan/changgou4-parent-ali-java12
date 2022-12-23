@@ -71,6 +71,7 @@ public class Order  implements Serializable {
     private Long userId;
     @TableField(exist = false)
     private User user;
+    private Integer payMethod;
     //订单总价
     @TableField(value ="total_price")
     private Double totalPrice;
